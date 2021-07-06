@@ -1,0 +1,13 @@
+<app-loged></app-loged>
+<div class="head-text"><h1>Task list</h1></div>
+
+<div class="container" style="height:  640px; overflow-y: scroll; margin-top: 60px;">
+    <div class="row">
+        <div class="col-md-12">
+            <app-task-item [task]="task"  
+            *ngFor="let task of tasks"
+            (emittedTask)="delete($event)">
+            </app-task-item>
+        </div>
+    </div>
+</div>

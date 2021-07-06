@@ -1,0 +1,13 @@
+<app-loged></app-loged>
+<div class="task-add-dark" id="center">
+    <form (ngSubmit)="add()">
+        <h2 class="sr-only">Add new task</h2>
+        <div class="form-group"><input class="form-control" type = "text" placeholder="name" maxlength="45" required name="name" [(ngModel)]="name" #n = "ngModel"></div>
+        <div class="error" *ngIf='n.invalid && n.dirty'>Enter the name of the task</div>
+        <div class="form-group"><input class="form-control" type="text" placeholder="type" maxlength="45" required name="type" [(ngModel)]="type" #t = "ngModel"></div>
+        <div class="error" *ngIf='t.invalid && t.dirty'>Enter the type of the task</div>
+        <div class="form-group"><textarea name="description" placeholder="description" maxlength="100"  class="form-control" style="resize: none;" cols="100" rows="4" [(ngModel)]="description"></textarea></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Add new task</button></div>
+    </form>
+</div>
+

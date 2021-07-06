@@ -1,0 +1,11 @@
+<app-un-loged></app-un-loged>
+<div class="login-dark">
+    <form (ngSubmit)="logIn()">
+        <h2 class="sr-only">Login</h2>
+        <div class="form-group"><input class="form-control" type="text" maxlength="45" required name="username" placeholder="username" #un = "ngModel" [(ngModel)]="username"></div>
+        <div class="error" *ngIf='un.invalid && un.dirty'>Enter your username</div>
+        <div class="form-group"><input class="form-control" type="password" maxlength="45" name="password" required #pw = "ngModel" placeholder="Password" [(ngModel)]="password"></div>
+        <div class="error" *ngIf='pw.invalid && pw.dirty'>Enter your password</div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Log In</button></div></form>
+</div>
+

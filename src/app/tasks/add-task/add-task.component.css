@@ -1,0 +1,73 @@
+#center{
+    text-align: center;
+}
+
+
+.task-add-dark {
+    height: 700px;
+    /* background:#475d62 url(../../assets/img/star-sky.jpg); */
+    background-size:cover;
+    position:relative;
+  }
+  
+  .task-add-dark form {
+    max-width:500px;
+    width:90%;
+    background-color:#1e2833;
+    padding:40px;
+    border-radius:4px;
+    transform:translate(-50%, -50%);
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:#fff;
+    box-shadow:3px 3px 4px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .task-add-dark .illustration {
+    text-align:center;
+    padding:15px 0 20px;
+    font-size:100px;
+    color:#2980ef;
+  }
+  
+  .task-add-dark form .form-control {
+    background:none;
+    border:none;
+    border-bottom:1px solid #434a52;
+    border-radius:0;
+    box-shadow:none;
+    outline:none;
+    color:inherit;
+  }
+  
+  .task-add-dark form .btn-primary {
+    background:#214a80;
+    border:none;
+    border-radius:4px;
+    padding:11px;
+    box-shadow:none;
+    margin-top:26px;
+    text-shadow:none;
+    outline:none;
+  }
+  
+  .task-add-dark form .btn-primary:hover, .task-add-dark form .btn-primary:active {
+    background:#b837d871;
+    outline:none;
+  }
+  
+
+ 
+  
+  .task-add-dark form .btn-primary:active {
+    transform:translateY(1px);
+  }
+  
+.error{
+  color: red;
+}

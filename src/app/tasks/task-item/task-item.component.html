@@ -1,0 +1,11 @@
+<div class="card mycard">
+    <div class="card-body">
+      <h5 class="card-title" [ngClass] = "task.finished === 1 ? 'finished' : 'not-finished' ">{{task.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{task.type}}</h6>
+      <h6 class="card-subtitle mb-2 text-muted" *ngIf="task.finished === 1">Finished</h6>
+      <h6 class="card-subtitle mb-2 text-muted" *ngIf="task.finished !== 1">Not finished</h6>
+      <p class="card-text">{{task.description}}</p>
+      <button style="font-size:24px; margin-right: 20px;" class = "btn btn-primary btn-block" (click) = "editTask()"><i class="bi bi-pencil-square"></i></button>
+      <button style="font-size:24px" class = "btn btn-primary btn-danger" (click) = "delete()"><i class="bi bi-trash-fill"></i></button>
+    </div>
+</div>

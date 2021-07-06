@@ -1,0 +1,15 @@
+<app-loged></app-loged>
+
+<div class="task-add-dark" id="center">
+    <form (ngSubmit)="change()">
+        <h2 class="sr-only">Edit task</h2>
+        <div class="form-group"><textarea name="description" placeholder="description" maxlength="100"  class="form-control" style="resize: none;" cols="100" rows="4" [(ngModel)]="description"></textarea></div><br>
+        <div class="form-group"><p id="question">Is this task finished: <input type="checkbox" [checked] = "finished" class = "form-check-input" (change) = "finished = !finished"></p></div>
+        <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Edit task</button></div>
+    </form>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>

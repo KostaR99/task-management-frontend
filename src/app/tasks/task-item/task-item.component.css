@@ -1,0 +1,32 @@
+.mycard{
+    background-color: #1e2833;
+    transition: 0.3s linear;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.mycard:hover{
+    transition: 20 ease;
+    box-shadow: 0 0 0  6px #5436d87c;
+}
+
+.name{
+    font-size: 20px;
+    display: flex;
+    flex-grow: 1;
+}
+
+.finished{
+    text-decoration: line-through;
+}
+
+
+.task-buttons button{
+    margin-left: 20px;
+}
